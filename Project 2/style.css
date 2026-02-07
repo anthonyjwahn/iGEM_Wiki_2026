@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+}
+
+h1 {
+    font-family: "Playfair Display", sans-serif; 
+    font-weight: 400;
+    font-size: 80px;
+    text-align: center;
+}
+
+p {
+    font-family: "Playfair Display", sans-serif; 
+    font-weight: 200;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+.left{
+
+}
+
+.right{
+    margin-left: auto;
+    margin-right: 2%;
+    width: 50%;
+}
+
+#img1{
+    -webkit-mask-image: linear-gradient(transparent 1%,#000,transparent 98%);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+#img1bg{
+    background-image: linear-gradient(white, #a98d78);
+}
+
+#section1{
+    background-color: #a98d78;
+    margin: 0;
+    padding: 50px;
+    vertical-align: top;
+    justify-content: center; 
+    box-sizing: border-box; 
+    flex-direction: column;
+}
+
+#gradient{
+    height: 400px;
+    background-image: linear-gradient(to bottom,#a98d78, #ffffff );
+}
+
+#div2{
+    height: 200px;
+    background-color: #ffffff;
+}
+
+.fade-in-element{
+    padding: 100px;
+    font-weight: 400px;
+    color: #341d00;
+    width: 850px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in-element.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.ssimg{
+    width: 85%;
+    border-radius: 20px;
+}
+
+.slideshow{
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.slides{
+    display: none;
+    margin: auto;
+}
+
+.location {
+  color: #000000;
+  background-color: #dfdfdfb2;
+  border-style: solid;
+  border-width: 4px;
+  border-color: #00000079;
+  font-family: "Quicksand";
+  border-radius: 20px;
+  font-size: 20px;
+  margin: auto;
+  padding: 8px 12px;
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
