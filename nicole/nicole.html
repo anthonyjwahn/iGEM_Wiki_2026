@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicole Zhu — Portfolio</title>
+
+  <!-- Fonts (closest vibe to your mockup) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    :root{
+      --bg:#2d3148;         /* page background */
+      --card:#22263c;       /* cards */
+      --muted:#b7bdd6;      /* soft text */
+      --text:#ffffff;       /* main text */
+      --line:#8d93b5;       /* scribble */
+      --pill:#4b5069;       /* button */
+      --pillText:#f1f3ff;
+      --radius:22px;
+      --maxw:420px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+  margin:0;
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+
+#hello{
+  display: block;
+  margin: 0 auto;      /* centers horizontally */
+  width: 70vw;         /* responsive */
+  max-width: 1100px;   /* prevents it from getting insane */
+  height: auto;
+
+  stroke-dasharray: 4416;
+  stroke-dashoffset: 4416;
+  animation: fillSvg 3s linear forwards;
+}
+
+
+    @keyframes fillSvg {
+        from {
+            stroke-dashoffset: 4416;
+        }
+        to {
+            stroke-dashoffset: 0;
+        } 
+    }
+
+    a{
+  color: inherit;
+  text-decoration: none;
+}
+a:visited{
+  color: inherit;
+}
+
+    .wrap{
+      max-width: 1400px;
+      margin:0 auto;
+      min-height:200vh;
+      padding: 24px 40px 36px;
+      position:relative;
+    }
+
+    /* Top nav */
+    nav{
+      display:flex;
+      justify-content:center;
+      gap:38px;
+      padding-top:6px;
+      margin-bottom:14px;
+      font: size 100px;
+      color:var(--muted);
+      opacity:.95;
+      letter-spacing:.2px;
+    }
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      transition:opacity .2s ease;
+    }
+    nav a:hover{ opacity:.8; }
+
+    /* Hero */
+    
+    .hero{
+      position:relative;
+      padding:10px 0 22px;
+    }
+    .hello{
+      font-family:Pacifico, cursive;
+      font-size:78px;
+      line-height:0.95;
+      margin:10px 0 0;
+      text-align:center;
+      font-weight:400;
+    }
+    .im{
+      text-align:center;
+      margin: 18px 0 0;
+      font-size:34px;
+      color:var(--muted);
+      font-weight:400;
+    }
+
+    /* Section titles */
+    h2{
+      font-size:52px;
+      font-weight:500;
+      margin:42px 0 12px;
+      letter-spacing:.5px;
+    }
+
+    /* About */
+    .about{
+  display:flex;
+  justify-content:center;   /* centers the two columns as a group */
+  align-items:center;       /* vertically aligns text + photo */
+  gap:60px;
+  margin: 0 auto;           /* centers the section container */
+  max-width: 1100px;        /* controls how wide it gets */
+  padding: 30px 0 28px;
+  position:relative;
+}
+
+
+.about .text{
+  flex: 0 1 520px;          /* keeps it from stretching too wide */
+  font-size: 24px;          /* 28 is ok too, but this reads nicer */
+  line-height: 1.6;         /* IMPORTANT: your line-height line was broken */
+  color: var(--muted);
+  margin-top: 0;
+}
+
+    .about .photoBlock{
+      width: auto;
+      text-align:center;
+      margin-top:6px;
+      position: center;
+    }
+    .avatar{
+      width:300px;
+      height:300px;
+      border-radius:800px;
+      object-fit:cover;
+      border:6px solid rgba(255,255,255,.06);
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
+      background:#1d2135;
+    }
+    .caption{
+  margin-top:14px;
+  font-size:18px;     /* bigger */
+  color:var(--muted);
+  line-height:1.3;
+}
+
+    /* dotted vertical divider like the mock */
+    .dots{
+      position:absolute;
+      left:50%;
+      transform:translateX(-50%);
+      bottom:0px;
+      height: 100px;
+      width:30px;
+      border-left:1px dashed rgba(255,255,255,.25);
+      opacity:1;
+    }
+
+    /* Works cards */
+    .works{
+  margin: 60px auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 36px;
+}
+
+
+.card{
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.015)
+  );
+  border-radius: 28px;
+  padding: 36px 28px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+  box-shadow: 0 30px 70px rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 40px 90px rgba(0,0,0,.45);
+}
+
+.card .left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 300px;        
+  max-width: 300px;
+  height: auto;
+}
+
+
+.badge{
+  width: 200px;
+  height: 200px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.15);
+}
+
+
+.meta{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  max-width: 260px;
+}
+
+.meta .desc{
+  font-size: 17px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+
+.pill{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 28px;
+  font-size: 15px;
+  font-weight: 500;
+
+  background: rgba(255,255,255,.16);
+  color: var(--pillText) !important;
+  text-decoration: none !important;
+
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.2);
+
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+}
+
+.pill:visited{
+  color: var(--pillText) !important;
+}
+
+.pill:hover{
+  transform: translateY(-2px);
+}
+
+.badge img{
+      width:80%;
+      height:auto;
+      display:block;
+    }
+
+    /* Contact */
+    .contact{
+      margin-top:18px;
+      padding-bottom:18px;
+    }
+    .contact p{
+      margin:0;
+      color:var(--muted);
+      font-size:12px;
+      line-height:1.5;
+      max-width:280px;
+    }
+
+    /* Footer scribble */
+    .footerScribble{
+      width:100%;
+      height:110px;
+      margin-top:18px;
+      opacity:.9;
+    }
+
+    /* Small screens */
+    @media (max-width:380px){
+      .hello{ font-size:68px; }
+      .about .text{ max-width:190px; }
+      .logo{ width:124px; max-width:124px; }
+    }
+
+    .card--prosper:hover{
+  box-shadow: 0 40px 90px rgba(255, 108, 74, .18);
+  border-color: rgba(255, 108, 74, .25);
+}
+.card--prosper:hover .pill{
+  background: rgba(255, 108, 74, .22);
+  box-shadow: 0 18px 50px rgba(255, 108, 74, .18);
+}
+
+.card--atom:hover{
+  box-shadow: 0 40px 90px rgba(88, 204, 140, .16);
+  border-color: rgba(88, 204, 140, .22);
+}
+.card--atom:hover .pill{
+  background: rgba(88, 204, 140, .20);
+  box-shadow: 0 18px 50px rgba(88, 204, 140, .16);
+}
+
+.card--jewelry:hover{
+  box-shadow: 0 40px 90px rgba(242, 189, 171, .18);
+  border-color: rgba(242, 189, 171, .24);
+}
+.card--jewelry:hover .pill{
+  background: rgba(242, 189, 171, .22);
+  box-shadow: 0 18px 50px rgba(242, 189, 171, .16);
+}
+
+.contact-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.contact-card{
+  padding: 28px;
+  border-radius: 20px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  color: white;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.contact-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.contact-card span{
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.contact-card strong{
+  display: block;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.footer-note{
+  margin-top: 48px;      /* space below cards */
+  text-align: center;
+  font-size: 14px;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="#about">about me!</a>
+      <a href="#works">works</a>
+      <a href="#contact">contact</a>
+    </nav>
+
+    <header class="hero">
+        <svg id="hello" width="1100" height="468" viewBox="0 0 1100 468" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.53095 245.287C163.778 228.64 429.309 113.618 364.882 36.2068C279.538 -66.3383 145.801 226.762 122.308 407.833C151.834 323.006 251.247 212.26 287.327 295.311C309.118 345.47 224.133 448.207 287.327 452.618C337.883 456.147 361.867 394.827 374.304 358.118L482.099 286.04C468.238 257.499 415.428 248.751 387.832 295.311C340.659 374.899 411.222 405.889 459.015 407.833C506.808 409.778 569.925 356.528 610.308 286.611C664.308 193.118 699.808 112.414 664.308 81.1179C594.497 19.5743 535.966 317.983 578.882 391.309C613.214 449.97 693.753 365.618 741.308 303.545C816.491 205.412 860.406 115.236 816.491 81.118C772.576 47.0004 723.16 147.047 707.308 286.04C688.489 451.051 776.808 429.101 816.491 391.309C856.173 353.517 887.309 303.545 887.309 303.545C869.418 342.183 856.035 405.889 927.809 407.833C999.582 409.778 995.809 262.618 964.698 256.985C933.587 251.352 911.024 268.056 916.308 290.407C921.373 311.826 954.873 313.86 971.116 303.545C999.179 291.096 1064.95 255.66 1085.81 213.618" stroke="white" stroke-width="30"/>
+            </svg>
+            
+        
+      <div class="im">I’m Nicole,</div>
+
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>about me</h2>
+
+        <div class="about">
+          <div class="text">
+            Hi! My name is Nicole and I am a sophomore at Cornell University
+            studying Biology on a pre-med track. In my free time I love to eat,
+            paint, and make jewelry!
+          </div>
+
+          <div class="photoBlock">
+            <!-- Replace src with your photo file -->
+            <img class="avatar" src="personal profile pics/nicole.jpg" alt="Nicole portrait" onerror="this.style.display='none'; this.insertAdjacentHTML('afterend','<div class=&quot;avatar&quot; style=&quot;display:grid;place-items:center;color:rgba(255,255,255,.6);font-size:12px;&quot;>profile.jpg</div>')" />
+            <div class="caption">
+              <div style="font-weight:600;color:#fff;opacity:.95;">Nicole Zhu</div>
+              <div>New York, NY</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-- ✅ WORKS SECTION (paste this whole block to replace your current works section) -->
+<section id="works">
+    <h2>my works!</h2>
+  
+    <div class="works">
+      <!-- Card 1: Prosper -->
+      <div class="card card--prosper">
+        <div class="left">
+          <img class="logo" src="personal profile pics/prosper.png" alt="Prosper logo" />
+        </div>
+  
+        <div class="meta">
+          <div class="desc">
+            Planetary Removal of Soil Perchlorates and Enrichment Remediation!
+          </div>
+          <a class="pill" href="https://2025.igem.wiki/cornell/index.html" target="_blank" rel="noreferrer">
+            click here!
+          </a>
+        </div>
+      </div>
+  
+      <!-- Card 2: Atomahacks -->
+      <div class="card card--atom">
+        <div class="left">
+          <div class="badge">
+            <img src="personal profile pics/atomhacks.png" alt="Atomahacks badge" />
+          </div>
+        </div>
+  
+        <div class="meta">
+          <div class="desc">2024 Atomhacks compeition. I worked on the design and setup for the website as well as merch and logos</div>
+          <a class="pill" href="https://www.atomhacks.org/" target="_blank" rel="noreferrer">
+            click here!
+          </a>
+        </div>
+      </div>
+  
+      <!-- Card 3: Jewelry -->
+      <div class="card card--jewelry">
+        <div class="left">
+          <div class="badge" style="background:rgba(255,255,255,.10)">
+            <img src="personal profile pics/jewelry.png" alt="Jewelry icon" />
+          </div>
+        </div>
+  
+        <div class="meta">
+          <div class="desc">Check out my jewelry shop! I make custom handmade jewelry.</div>
+          <a class="pill" href="https://www.etsy.com/shop/cococatjewleryshop" target="_blank" rel="noreferrer">
+            click here!
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact">
+    <h2>contact</h2>
+  
+    <div class="contact-grid">
+      <a href="mailto:nz274@cornell.edu" class="contact-card">
+        <span>Email</span>
+        <strong>nz274@cornell.edu</strong>
+      </a>
+  
+      <a href="www.linkedin.com/in/nicole-zhu-6b3b1824b"
+         target="_blank"
+         rel="noreferrer"
+         class="contact-card">
+        <span>LinkedIn</span>
+        <strong>Connect with me</strong>
+      </a>
+    </div>
+  
+    <div class="footer-note">
+      © 2026 Nicole Zhu · Designed & built by me
+    </div>
+  </section>  
+        
+</main> 
+</div>
+
+
+
+  <script>
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if(!el) return;
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
