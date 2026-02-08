@@ -1,0 +1,41 @@
+body {
+    background-color: rgba(6,144,143,100);
+}
+
+h1 {
+    color: rgba(255,120,90,100);
+    font-family: verdana;
+}
+h2 {
+    color: rgba(255,120,90,100);
+    font-family: verdana;
+}
+p {
+    color: rgba(232,221,181,100);
+    font-family: verdana;
+}
+li {
+    color: rgba(232,221,181,100);
+    font-family: verdana;
+}
+a {
+    color: rgba(185,49,79,100);
+    font-family: verdana;
+}
+
+.split {
+    width: 50%;
+    display: inline-block;
+}
+
+#Maryland {
+    height: 25%;
+    width: 25%;
+    float: right;
+}
+
+#selfie {
+    height: 30%;
+    width: 30%;
+    float: right;
+}
