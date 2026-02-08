@@ -78,9 +78,41 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p>
-                Add your email and social links. This is how people reach you.
-            </p>
+            <form class="contact-card">
+                <div class="contact-row">
+                    <div class="contact-field">
+                        <label for="first-name">First name <span>*</span></label>
+                        <input id="first-name" name="first-name" type="text" placeholder="First name" required>
+                    </div>
+                    <div class="contact-field">
+                        <label for="last-name">Last name <span>*</span></label>
+                        <input id="last-name" name="last-name" type="text" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="contact-field">
+                    <label for="email">Email <span>*</span></label>
+                    <input id="email" name="email" type="email" placeholder="you@email.com" required>
+                </div>
+                <div class="contact-field">
+                    <label for="message">Message <span>*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button class="button primary contact-submit" type="submit">Let's talk</button>
+            </form>
+            <div class="contact-social">
+                <a class="social-icon" href="https://www.linkedin.com/in/llinwinnie/" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                        <path d="M6.94 8.5H3.5V20.5H6.94V8.5Z" />
+                        <path d="M5.22 7.1C4.09 7.1 3.18 6.19 3.18 5.06C3.18 3.93 4.09 3.02 5.22 3.02C6.35 3.02 7.26 3.93 7.26 5.06C7.26 6.19 6.35 7.1 5.22 7.1Z" />
+                        <path d="M20.5 20.5H17.06V14.42C17.06 12.93 17.03 11.02 15.01 11.02C12.96 11.02 12.64 12.61 12.64 14.31V20.5H9.2V8.5H12.5V10.07H12.54C13 9.2 14.14 8.27 15.83 8.27C19.34 8.27 20.5 10.58 20.5 13.58V20.5Z" />
+                    </svg>
+                </a>
+                <a class="social-icon" href="https://github.com/llinwinnie" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                        <path d="M12 2.5C6.48 2.5 2 7 2 12.62C2 17.11 4.87 20.9 8.84 22.25C9.33 22.35 9.5 22.04 9.5 21.78C9.5 21.55 9.49 20.79 9.49 19.9C7 20.46 6.35 18.86 6.35 18.86C5.93 17.79 5.32 17.5 5.32 17.5C4.5 16.94 5.38 16.95 5.38 16.95C6.29 17.02 6.77 17.88 6.77 17.88C7.57 19.28 8.9 18.88 9.42 18.65C9.5 18.06 9.73 17.66 9.98 17.43C7.97 17.2 5.86 16.39 5.86 12.17C5.86 10.98 6.28 10.01 6.97 9.25C6.86 9.02 6.49 7.97 7.08 6.56C7.08 6.56 7.98 6.27 9.49 7.33C10.33 7.09 11.22 6.97 12.11 6.97C13 6.97 13.89 7.09 14.73 7.33C16.24 6.27 17.14 6.56 17.14 6.56C17.73 7.97 17.36 9.02 17.25 9.25C17.94 10.01 18.36 10.98 18.36 12.17C18.36 16.4 16.24 17.2 14.23 17.42C14.55 17.71 14.85 18.28 14.85 19.15C14.85 20.38 14.84 21.41 14.84 21.78C14.84 22.04 15.01 22.36 15.5 22.25C19.47 20.9 22.34 17.11 22.34 12.62C22.34 7 17.86 2.5 12 2.5Z" />
+                    </svg>
+                </a>
+            </div>
         </div>
     </section>
     <script src="script.js"></script>
