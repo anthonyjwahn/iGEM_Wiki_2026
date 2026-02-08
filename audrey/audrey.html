@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="audrey.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+
+<div id="title_box">
+    <h1 id="title" class="animate__animated animate__bounce">audrey's matchabook</h1>
+</div>
+
+<div id="introduction">
+    <p>here is a collection of my matcha recipes and what I enjoy!</p>
+</div>
+
+<div class="container">
+
+    <!-- BOX 1 -->
+    <div class="box">
+        <div class="box-header" onclick="toggleBox(this)">
+            <span class="box-title">matcha and white chocolate chip cookies</span>
+            <img src="https://www.theflouredtable.com/wp-content/uploads/2023/01/matcha-white-chocolate-cookies-FP.jpg"
+                 alt="matcha white chocolate chip cookies" width="30%" height="30%">
+        </div>
+
+        <div class="box-content">
+            <div class="content-inner"> 
+            <p>very yummy matcha cookies with white chocolate chips or crushed up candy cane hershey kisses for a festive touch!</p>
+
+            <h2>ingredients</h2>
+            <ul>
+                <li>matcha powder</li>
+                <li>baking soda</li>
+                <li>all-purpose flour</li>
+                <li>salt</li>
+                <li>granulated sugar</li>
+                <li>light brown sugar</li>
+                <li>butter</li>
+                <li>vanilla extract</li>
+                <li>eggs</li>
+                <li>white chocolate chips</li>
+            </ul>
+            <a href="https://www.cooking-therapy.com/matcha-white-chocolate-chip-cookies/" class="link-button" target="_blank">
+  here's the recipe i used!
+</a>
+
+            <h2>tips + tricks</h2>
+            <ul>
+                <li>i mixed my matcha powder with a little bit of hot water — this definitely gives better color but it also makes softer and moister cookies (which I personally like)</li>
+                <li>browning butter isn't too hard! just keep an eye on it for about a minute after all the bubbles evaporate and watch for tiny, brown flecks forming. once they start to form, keep it on the heat for a max of ten seconds and then transfer to a separate bowl to cool</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <!-- BOX 2 -->
+    <div class="box">
+        <div class="box-header" onclick="toggleBox(this)">
+            <span class="box-title">matcha earl grey tiramisu</span>
+            <img src="https://teakandthyme.com/wp-content/uploads/2023/01/matcha-tiramisu-DSC_0780-1x1-1200.jpg"
+                 alt="matcha tiramisu" width="30%" height="30%">
+        </div>
+
+        <div class="box-content">
+            <div class="content-inner">
+            <h2>ingredients</h2>
+            <ul>
+                <li>matcha powder</li>
+                <li>earl grey tea</li>
+                <li>ladyfingers</li>
+                <li>mascarpone</li>
+                <li>sugar</li>
+                <li>eggs</li>
+            </ul>
+            <a href="https://teakandthyme.com/matcha-tiramisu/" class="link-button" target="_blank">
+  here's the recipe i used!
+</a>
+            <h2>tips + tricks</h2>
+            <ul>
+                <li>make sure to spread the cream evenly!! it looks better and tastes better in each bite</li>
+                <li>make sure to not dip the ladyfingers for too long! a quick submerge gives the perfect texture</li>
+                <li>let the tiramisu sit overnight - it makes the texture so much better and the ladyfingers much more flavorful</li>
+                <li>make sure to simmer the earl grey for long enough and press the tea bags into the heavy cream to extract the tea, but not too long (or else it will be bitter)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <!-- BOX 3 -->
+    <div class="box">
+        <div class="box-header" onclick="toggleBox(this)">
+            <span class="box-title">at-home no-proper-equipment matcha latte</span>
+            <img src="https://www.foodandwine.com/thmb/2tI8aL1Z8hKhfV48_c8b6uWG-TQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Iced-Matcha-Latte-FT-RECIPE0622-2000-9c2e116d3bc54bdaacda10e62e8e0205.jpg"
+                 alt="matcha latte" width="30%" height="30%">
+        </div>
+
+        <div class="box-content">
+            <div class="content-inner">
+            <h3>ingredients</h3>
+            <ul>
+                <li>matcha powder</li>
+                <li>milk</li>
+                <li>ice</li>
+                <li>optional: sugar</li>
+            </ul>
+
+            <h1>laura has a nice gyatt</h1>
+            <h1>CLURDIHHHHH</h1>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+function toggleBox(header) {
+    const content = header.nextElementSibling;
+    content.classList.toggle("open");
+}
+</script>
+
+</body>
+</html>
