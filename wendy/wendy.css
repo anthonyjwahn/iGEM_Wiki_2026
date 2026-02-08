@@ -1,0 +1,185 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Lavishly+Yours&family=Londrina+Outline&family=Manufacturing+Consent&family=Quintessential&family=Ribeye+Marrow&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align: center;
+    background: url('/https://i.pinimg.com/736x/95/83/54/9583545db29e8a5ca7a94d3d7d87f7c4.jpg/wendy_bg.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1{
+    font-family: 'Londrina Outline', cursive;
+    -webkit-text-size-adjust: 3px;
+    -webkit-text-size-adjust: black;
+    text-align: 120px;
+    font-size: 60px;
+    color:rgb(126, 164, 213)
+ 
+}
+
+h2{
+    font-family: fleur de leah, cursive;
+    font-size: 120px;
+    position: absolute; top: 50px; right: 400px;
+    text-align: center;
+    text-shadow: rgb(151, 210, 240) 2px 2px 40px;
+    color:rgb(126, 164, 213)
+}
+
+h4{
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 30px;
+    position: absolute;
+    top: 520px;
+    left: 700px;
+  
+    color:rgb(167, 191, 223)
+ 
+    
+}
+
+h5{
+    font-family: 'Manufacturing Cnsent', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 570px;
+    left: 700px;
+    color:rgb(126, 164, 213)
+}
+
+    .sticky-note {
+
+  position: absolute;
+  width: 250px;
+  left: 50px;
+  top: 230px;
+
+
+  padding: 30px 20px 20px;
+  background: #a2cbff;
+  border-radius: 10px;
+  font-family: 'Comic Sans MS', 'Patrick Hand', cursive;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+  transform: rotate(-2deg);
+}
+
+
+.sticky-note::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-width: 0 0 25px 25px;
+  border-style: solid;
+  border-color: transparent transparent #a2cbff transparent;
+}
+
+
+.pin {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background: rgb(20, 107, 220);
+  border-radius: 50%;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.pin::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 6px;
+  width: 2px;
+  height: 18px;
+  background: #555;
+}
+
+.sticky-note ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.sticky-note li {
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.sticky-note:hover {
+  transform: rotate(0deg) scale(1.03);
+}
+
+.pin {
+  background: #c9deff; 
+}
+
+
+.about-box {
+
+    font-family: 'Quintessential', cursive;
+  width: 3000px;             
+  padding: 20px;           
+  font-size: 16px;   
+  line-height: 1.9;      
+  
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 10px;
+
+  position: absolute;      
+  top: 320px;
+  left: 530px;
+}
+
+
+body {
+  background-image: url("https://www.freepik.com/free-photo/tasty-cup-coffee-new-delicious-mini-cakes-with-different-shapes-wooden-table-coffee-shop_19214039.htm#fromView=keyword&page=1&position=22&uuid=6c48bf79-56fc-45f1-8c8b-578f0a8657c7&query=Cafe+background");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.socials-container {
+     position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    top: 380px;
+    left: 170px;
+}
+.socials-container a {
+    
+    
+    background-color: aliceblue;
+    padding: 2em;
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    color: black;
+    fill: #000;
+    transition: transform 0.2s ease, color 0.2s ease;
+ 
+
+    top: 0px;
+    left: 200px;
+
+}
+
+.socials-container a:hover {
+  transform: scale(1.35);
+  color: #441a6e; 
+}
