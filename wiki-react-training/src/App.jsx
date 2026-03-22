@@ -12,6 +12,7 @@ function App() {
   const navLinks = [
     { label: "Team", href: "#team" },
     { label: "Projects", href: "#projects" },
+    { label: "FAQ", href: "#faq" },
     { label: "Contact", href: "#contact" },
   ];
 
