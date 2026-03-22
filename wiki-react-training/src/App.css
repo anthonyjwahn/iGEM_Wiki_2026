@@ -1,0 +1,373 @@
+.app {
+  min-height: 100vh;
+  font-family: "Inter", system-ui, sans-serif;
+  background-color: #f5f7fa;
+  color: #12172b;
+  padding: 32px;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 24px;
+  border-radius: 20px;
+  background: #12172b;
+  box-shadow: 0 10px 30px rgba(18, 18, 18, 0.08);
+}
+
+.header-text {
+  display: grid;
+  gap: 8px;
+}
+
+.header-brand img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #d1d9e0;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 16px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #f5f7fa;
+  padding: 8px 12px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover {
+  background: #d1d9e0;
+  color: #12172b;
+}
+
+.team-section {
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #f5f7fa;
+  box-shadow: 0 10px 30px rgba(18, 18, 18, 0.08);
+}
+
+.team-section h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  padding: 18px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(209, 217, 224, 0.8);
+  box-shadow: 0 8px 18px rgba(18, 18, 18, 0.08);
+  display: grid;
+  gap: 10px;
+}
+
+.team-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.team-card__name {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.team-card__year {
+  font-size: 0.85rem;
+  color: #4a6572;
+  font-weight: 600;
+}
+
+.team-card__role {
+  margin: 0;
+  font-weight: 600;
+  color: #4a6572;
+}
+
+.team-card__bio {
+  margin: 0;
+  color: #4a6572;
+  font-size: 0.95rem;
+}
+
+.projects-section {
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #f5f7fa;
+  box-shadow: 0 10px 30px rgba(18, 18, 18, 0.08);
+}
+
+.projects-section h2 {
+  margin: 0 0 16px;
+  font-size: 1.6rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: #ffffff;
+  border: 1px solid rgba(209, 217, 224, 0.8);
+  box-shadow: 0 8px 18px rgba(18, 18, 18, 0.08);
+  display: grid;
+  gap: 12px;
+}
+
+.project-card__title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #12172b;
+}
+
+.project-card__badge {
+  margin-left: auto;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #3d5a8b;
+  color: #f5f7fa;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.project-card__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  border-radius: 14px;
+  background: #f5f7fa;
+  border: 1px solid rgba(209, 217, 224, 0.8);
+  height: 140px;
+}
+
+.project-card__media img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+}
+
+.project-card__description {
+  margin: 0;
+  color: #4a6572;
+}
+
+.project-card__leads {
+  display: grid;
+  gap: 8px;
+}
+
+.project-card__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #4a6572;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.project-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-card__list li {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #d1d9e0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #12172b;
+}
+
+.faq-section {
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #f5f7fa;
+  box-shadow: 0 10px 30px rgba(18, 18, 18, 0.08);
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.faq-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.faq-button {
+  border: 1px solid rgba(18, 23, 43, 0.2);
+  background: #ffffff;
+  color: #12172b;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.faq-button:hover {
+  background: #3d5a8b;
+  color: #f5f7fa;
+}
+
+.faq-list {
+  display: grid;
+  gap: 12px;
+}
+
+.faq-item {
+  border: 1px solid rgba(209, 217, 224, 0.9);
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 16px 18px;
+  text-align: left;
+  cursor: pointer;
+  display: grid;
+  gap: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.faq-item__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+  color: #12172b;
+}
+
+.faq-item__icon {
+  font-size: 1.1rem;
+  color: #4a6572;
+}
+
+.faq-item__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.faq-item__answer p {
+  margin: 0;
+  color: #4a6572;
+}
+
+.faq-item.is-open {
+  border-color: rgba(74, 101, 114, 0.5);
+  box-shadow: 0 10px 24px rgba(18, 18, 18, 0.08);
+}
+
+.faq-item.is-open .faq-item__answer {
+  max-height: 160px;
+}
+
+.site-footer {
+  margin-top: 32px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #12172b;
+  color: #f5f7fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-text {
+  display: grid;
+  gap: 6px;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer-copy {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-links a {
+  color: #f5f7fa;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.footer-links a:hover {
+  background: #3d5a8b;
+  color: #f5f7fa;
+}
+
+@media (max-width: 700px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
