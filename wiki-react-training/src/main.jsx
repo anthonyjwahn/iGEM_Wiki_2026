@@ -9,3 +9,4 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
+//cd wiki-react-training (everytime btw)

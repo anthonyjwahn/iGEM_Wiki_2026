@@ -3,14 +3,14 @@ function ProjectCard({ title, description, image, link }) {
     <div className="project-card"
     
     style={{
-        background: "linear-gradient(135deg, #ede9fe, #fbcfe8)",
+        background: "linear-gradient(135deg, #e9f8fe, #c5e0ef)",
         padding: "25px",
         borderRadius: "16px",
         width: "260px",
         textAlign: "center",
         boxShadow: "0 6px 16px rgba(0,0,0,0.1)",
         fontFamily: "'Poppins', sans-serif",
-        color: "#4c1d95",
+        color: "#4b6f8d",
         transition: "0.3s",
         gridColumnStart: "span 1",
 
@@ -25,11 +25,8 @@ function ProjectCard({ title, description, image, link }) {
       />
       <h3>{title}</h3>
       <p>{description}</p>
-      {link && (
-        <a href={link} target="_blank" rel="noreferrer">
-          Learn More
-        </a>
-      )}
+
+     
  
     </div>
   )

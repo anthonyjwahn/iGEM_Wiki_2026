@@ -2,7 +2,7 @@ function TeamMember({ name, role, year, bio, image }) {
   return (
     <div
       style={{
-        background: "linear-gradient(135deg, #ede9fe, #fbcfe8)",
+        background: "linear-gradient(135deg, #e9f2fe, #cfdeff)",
         padding: "25px",
         borderRadius: "16px",
         width: "260px",

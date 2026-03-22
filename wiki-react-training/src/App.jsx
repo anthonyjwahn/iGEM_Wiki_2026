@@ -1,8 +1,11 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import TeamMember from './components/TeamMember';
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
+import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -78,7 +81,7 @@ function App() {
       description: "A synthetic biology platform that engineers yeast to biosynthesize ursolic acid, a natural compound with anti-cancer properties. The goal was to create a more sustainable and scalable method of producing the compound compared with extracting it from plants.",
       leads: ["Coco", "Jeff", "Eujin"]
     },
-    // Add more projects...
+    // Add more projects... 
   ];
 
 
@@ -141,6 +144,16 @@ function App() {
       <Footer teamName="Cornell iGEM" />
     </div>
   );
+
+  return(
+    <router>
+      <routes>
+        <route path="/" element={<Home />} />
+        <route path="/Contact" element={<Contact />} />
+        <route path="/FAQ" element={<FAQ />} />
+      </routes>
+    </router>
+  )
 }
 
 

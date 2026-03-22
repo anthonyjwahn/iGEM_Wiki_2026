@@ -1,8 +1,9 @@
+import logo from "./igem logo.png";
 function Header() {
   return (
     <header
       style={{
-        background: "linear-gradient(90deg, #ede9fe, #d8b4fe)",
+        background: "linear-gradient(90deg, #e9f1fe, #b4bffe)",
         padding: "20px 220px",
         boxShadow: "0 3px 10px rgba(0,0,0,0.08)"
       }}
@@ -23,7 +24,7 @@ function Header() {
           }}
         >
           <li><a href="#" style={linkStyle}>What We Do</a></li>
-          <li><a href="#" style={linkStyle}>Our Team</a></li>
+          <li><a href="#" style={linkStyle}>Past Projects</a></li>
 
           <h1
             style={{
@@ -33,11 +34,12 @@ function Header() {
               color: "#4c1d95"
             }}
           >
-            Cornell iGEM 2026
+            <img src={logo} alt="logo" style={{ width: "300px", height: "80px" ,size: "30px"}} />
           </h1>
 
-          <li><a href="#" style={linkStyle}>Project</a></li>
+        
           <li><a href="#" style={linkStyle}>Contact</a></li>
+          <li><a href="#" style={linkStyle}>FAQ</a></li>
         </ul>
     </header>
   )
